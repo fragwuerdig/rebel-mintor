@@ -1,0 +1,3 @@
+## Terra Classic Token Faucet
+
+This is a backend application to have permissionless access to tokens on the Terra Classic `rebel-2` network. To interface this you may use [rebel-mintor-ui](https://github.com/fragwuerdig/rebel-mintor-ui). I created this software to host my own instance of it. If you want to setup your own instance, you may want to contact me - Currently I have only little time for docs :p
