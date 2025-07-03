@@ -61,12 +61,13 @@ app.post('/v1/mint/:name', async (req: Request, res: Response): Promise<void> =>
     }
 
     // Validate clientIp is a valid IPv4 or IPv6 address
+    /*getLogger('server').info(`Client IP: ${clientIp}`);
     const ipv4Regex = /^(?:\d{1,3}\.){3}\d{1,3}$/;
     const ipv6Regex = /^([a-fA-F0-9:]+:+)+[a-fA-F0-9]+$/;
     if (!clientIp || (!ipv4Regex.test(clientIp) && !ipv6Regex.test(clientIp))) {
         res.status(400).json({ error: "Invalid client IP address." });
         return;
-    }
+    }*/
 
     if (typeof receiver !== 'string' || !receiver.startsWith('terra1')) {
         res.status(400).json({ error: "Missing or invalid 'receiver' field." });
